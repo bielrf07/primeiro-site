@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Loja Simulada</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    
+    <header>
+        <h1>Minha Loja Simulada</h1>
+    </header>
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produto">
+                <img src="images/produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição do Produto 1</p>
+                <p>Preço: R$ 29,90</p>
+                <button onclick="adicionarAoCarrinho('Produto 1', 29.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="images/produto2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <p>Preço: R$ 39,90</p>
+                <button onclick="adicionarAoCarrinho('Produto 2', 39.90)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </section>
+        <section id="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul id="listaCarrinho"></ul>
+            <p id="totalCarrinho">Total: R$ 0,00</p>
+        </section>
+    </main>
     <script src="js/scripts.js"></script>
 </body>
 </html>
